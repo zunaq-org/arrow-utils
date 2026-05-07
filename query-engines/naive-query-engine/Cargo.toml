@@ -1,0 +1,11 @@
+[package]
+name = "naive-db"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arrow = { version = "13", features = ["prettyprint"] }
+sqlparser = "0.9.0"
+log = "0.4"
+twox-hash = "1.6.3"
+ordered-float = "3.0.0"

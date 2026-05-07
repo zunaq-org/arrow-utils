@@ -1,0 +1,16 @@
+[package]
+name = "df-play"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+datafusion = "49.0.0"
+tokio = { version = "1.47.1", features = ["full"] }
+deltalake = { version = "0.27", features = [
+    "s3",
+    "gcs",
+    "datafusion",
+    "datafusion-ext"
+]}
+base64 = "0.22"
